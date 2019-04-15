@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Javascript for Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Personal javascript -->
+
+    <!-- Iconic iconset -->
+    <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <!-- CHEATSHEET: https://useiconic.com/open#icons -->
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body class="bg-light">
+
+    <!-- Navigation (should go into masterpage) -->
+    <nav class="header navbar navbar-expand-lg navbar-dark mb-5 shadow">
+        <div class="container-fluid">
+            <a href="/" class="navbar-brand">
+                <i class="oi oi-calendar"></i>
+                CompyCal
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="event-single.html">Single event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="room-single.html">Single room</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End of navigation -->
+
+    <!-- Main. Content from here should go into separate pages -->
+    <main class="main">
+        <div class="container-fluid">
+            <div class="row mb-5">
+
+                <section class="col-md-7">
+                    <div class="card shadow">
+                        <img src="img/homepage-hero.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+
+                            <h1 class="card-title">
+                                Welcome!
+                            </h1>
+
+                            <!-- TODO: Create more brillant text than this -->
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur blanditiis perferendis esse dolore aperiam dolorem nulla doloremque dolor adipisci molestiae ipsa eos molestias iusto animi tempore soluta velit, reiciendis itaque.
+                            </p>
+
+                            <!-- TODO: Fix link -->
+                            <a href="#" class="btn btn-primary">View calendar</a>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-md-5">
+                    <div class="row mb-5">
+                        <div class="col-md">
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <h2 class="card-title">Login to your account</h2>
+
+                                    <!-- TODO: Fix form, so it works -->
+                                    <form action="#">
+                                        <div class="form-group">
+                                            <label for="username">Username</label>
+                                            <input id="username" type="text" class="form-control form-control-lg">
+                                        </div>
+                    
+                                        <div class="form-group">
+                                            <label for="password">Password</label>
+                                            <input id="password" type="text" class="form-control form-control-lg">
+                                        </div>
+                    
+                                        <div class="text-right">
+                                            <a href="#" class="btn btn-link">Forgot password?</a>
+                                            <button type="submit" class="btn btn-primary">Login</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <h2 class="card-title">Todays events</h2>
+
+                                    <!-- TODO: Make table dynamic with relevant information -->
+                                    <table class="table table-borderless table-hover table-responsive-md">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Time</th>
+                                                <th scope="col">Event</th>
+                                                <th scope="col">Room</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">11:30</th>
+                                                <td>Important Meeting</td>
+                                                <td>Canteen</td>
+                                            </tr>                                        
+                                        </tbody>
+                                    </table>
+
+                                    <a href="#" class="btn btn-primary">View calendar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Calendar timeline view -->
+            <div class="row mb-5">
+                <!-- TODO: Calendar timeline view -->
+            </div>
+            <!-- End of calendar timeline view -->
+        </div>
+    </main>
+    <!-- End of main -->
+
+    <!-- Footer (should go in masterpage) -->
+    <footer class="footer text-light">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md">
+                    <p class="p-3 m-0">
+                        &copy; 2019 CompyCal - All rights reserved. 
+                        Made with <i class="oi oi-droplet"></i> by 
+                        <a href="#" class="text-light">Jens</a>, 
+                        <a href="#" class="text-light">Marko</a> and 
+                        <a href="#" class="text-light">Sigurd</a>.
+                    </p>
+                </div>
+                <div class="col-md">
+                    <ul class="nav justify-content-end p-3">
+                        <li class="nav-item"><a href="#" class="nav-link p-0 pr-3 text-light">Privacy Policy</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link p-0 text-light">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of footer -->
+    
+</body>
+</html>

@@ -1,0 +1,20 @@
+//////////////////////////////
+// COLORS
+//////////////////////////////
+$color-primary: #084887;
+$color-secondary: #c1292e; 
+$color-tertiary: #f1d302;
+
+$color-white: #fdfffc;
+$color-light: #eaeaea;
+$color-dark: #161925;
+
+
+// Overriding bootstrap colors
+$theme-colors: (
+    "primary": $color-primary,
+    "secondary": $color-secondary,
+    "white": $color-white,
+    "light": $color-light, 
+    "dark": $color-dark
+)
